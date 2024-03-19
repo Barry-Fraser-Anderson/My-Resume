@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<!-- This is a hand-crafted document to exercise my HTML/CSS knowledge -->
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barry Anderson - Curriculum Vitae</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: cadetblue;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .personal-info {
+      text-align: center;
+    }
+
+    .name {
+      font-size: 40px;
+    }
+
+    .info-links {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 20px;
+    }
+
+    .links-row {
+      display: flex;
+      column-gap: 10px;
+      align-items: cen;
+    }
+
+    .skills--list {
+      columns: 4;
+      list-style: none;
+      background-color: lightgray;
+      padding-left: 5px
+    }
+
+    .job-tasks--list {
+      list-style: square;
+      margin-left: 30px;
+      margin-bottom: 10px;
+    }
+
+    .achievements--list {
+      list-style: square;
+      margin-left: 30px;
+    }
+
+    .roles-list {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 20px;
+      row-gap: 20px;
+    }
+
+    .role-header {
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+
+    .role-image {
+      vertical-align: top;
+    }
+
+    .university {
+      display: flex;
+      gap: 50px;
+    }
+
+    .courses-list {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      column-gap: 20px;
+      row-gap: 10px;
+    }
+
+    .training-text {
+      line-height: 1.2;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <section class="personal-info">
+      <h1 class="name">Barry Fraser Anderson</h1>
+      <p class="address">Barrow-in-Furness, LA14 1ER</p>
+      <div class="info-links">
+        <span class="links-row"><img src="images/email.png" alt="email logo"
+            height="20">barryanderson60@outlook.com</span>
+        <span class="links-row"><img src="images/phone.png" alt="phone logo" height="20">07484 311624</span>
+        <span class="links-row"><img src="images/linkedin.png" alt="linkedin logo" height="20">
+          <a
+            href="https://www.linkedin.com/in/barry-fraser-anderson">https://www.linkedin.com/in/barry-fraser-anderson</a></span>
+        <span class="links-row"><img src="images/github.png" alt="github logo" height="20">
+          <a href="https://github.com/barry-fraser-anderson">https://github.com/barry-fraser-anderson</a></span>
+      </div>
+    </section>
+
+    <section class="summary">
+      <h2>Profile</h2>
+      <p>
+        I am a competent software engineer with over 30 years of experience.
+      </p>
+      <p>
+        I am very easy-going and work well in a team but am also happy working alone.
+        I successfully worked from home for 2 years during the Covid pandemic, and am working from home in my current
+        position.
+      </p>
+      <p>
+        I have an eye for detail and a particular interest in code quality. I enjoy learning and using new skills.
+      </p>
+      <p>
+        I have previously held a UK security clearance.
+      </p>
+    </section>
+
+    <section class="experience">
+      <h2>Experience</h2>
+      <div class="roles-list">
+
+        <img class="role-image" src="images/cellhire.png" alt="Cellhire logo" width="40" height="40">
+        <div class="role">
+          <div class="role-header">
+            <p><strong>Senior Developer</strong></p>
+            <p>Cellhire</p>
+            <p>Remote</p>
+            <p>Jul 2023 - Present</p>
+          </div>
+          <div class="role-text">
+            <p>
+              Daily execution of the data loading and billing processes, with an aim to improve and automate them
+            </p>
+          </div>
+        </div>
+
+        <img class="role-image" src="images/3sl_large.png" alt="3SL logo" width="40" height="20">
+        <div class="role">
+          <div class="role-header">
+            <p><strong>Senior Software Engineer</strong></p>
+            <p>3SL</p>
+            <p>Barrow-in-Furness</p>
+            <p>Sep 1997 - Jul 2023</p>
+          </div>
+          <div class="role-text">
+            <p>
+              Development and maintenance of CRADLE, a cross-platform desktop-based Requirements Management
+              and Systems Engineering tool
+            </p>
+            <p>
+              As a member of the development team, I worked on all areas of the product, including:
+            </p>
+            <ul class="job-tasks--list">
+              <li>New features and upgrades</li>
+              <li>User Interface design, implementation, and improvements</li>
+              <li>Web publisher and API</li>
+              <li>Back-end processing, database server and communications, database conversions</li>
+              <li>Utilities and C API</li>
+              <li>Web publisher, Web access UI, and REST API</li>
+              <li>Code reviews, documentation, and testing</li>
+              <li>Investigating and learning new technologies to prepare for a complete re-write of the product set</li>
+            </ul>
+
+            <em>Key Achievements</em>
+            <ul class="achievements--list">
+              <li>
+                Researched and implemented an ODBC interface to provide Oracle support to a major customer
+              </li>
+              <li>
+                Developed an API to provide database access for the C#/.NET Office Tool Suite and customer
+                applications
+              </li>
+              <li>
+                Refactored much of the code-base to aid maintainability, stability, and performance
+              </li>
+              <li>
+                Reworked C libraries and utilities to enable support on Windows and Linux platforms
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <img class="role-image" src="images/endsleigh.png" alt="Endsleigh logo" width="40" height="40">
+        <div class="role">
+          <div class="role-header">
+            <p><strong>Application Programmer</strong></p>
+            <p>Endsleigh Insurance</p>
+            <p>Gloucester</p>
+            <p>1996 - 1997</p>
+          </div>
+          <div class="role-text">
+            <p>
+              Maintained and developed the Premium Calculation Engine using C. Database design
+            </p>
+          </div>
+        </div>
+
+        <img class="role-image" src="images/serco.png" alt="SerCo logo" width="40" height="40">
+        <div class="role">
+          <div class="role-header">
+            <p><strong>Senior Developer</strong></p>
+            <p>SerCo</p>
+            <p>DRA Malvern</p>
+            <p>1988 - 1966</p>
+          </div>
+          <div class="role-text">
+            <p>
+              Developed and maintained various utilities with C, C++, Perl on Unix platforms. Provided user support
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section> <!-- experience -->
+
+    <section class="education">
+      <h2>Education</h2>
+      <div class="university">
+        <strong>BSc (Hons) Physics with Computational Mathematics</strong>
+        <p>
+          Heriot-Watt University, Edinburgh
+        </p>
+      </div>
+    </section>
+
+    <section class="add-training">
+      <h2>Additional Training</h2>
+      <div class="courses-list">
+        <img src="images/udemy.png" alt="udemy logo" width="40" height="40">
+        <div class="training-text">
+          <p><strong>The Ultimate React Course 2024: React, Redux & More</strong></p>
+          <p>Skills: React.js · Redux.js · JavaScript</p>
+        </div>
+        <img src="images/udemy.png" alt="udemy logo" width="40" height="40">
+        <div class="training-text">
+          <p><strong>Build Responsive Real-World Websites with HTML and CSS</strong></p>
+          <p>Skills: Cascading Style Sheets (CSS) · HTML5 · Front-End Development</p>
+        </div>
+        <img src="images/udemy.png" alt="udemy logo" width="40" height="40">
+        <div class="training-text">
+          <p><strong>NextJs: The Complete Developer's Guide</strong></p>
+          <p>Skills: Next.js · React.js · TypeScript · JavaScript</p>
+        </div>
+        <img src="images/udemy.png" alt="udemy logo" width="40" height="40">
+        <div class="training-text">
+          <p><strong>Complete Guide to Building an App with .Net Core and React</strong></p>
+          <p>Skills: React.js · TypeScript · JavaScript · REST APIs · C# · .NET Core · ASP.NET Core</p>
+        </div>
+        <img src="images/udemy.png" alt="udemy logo" width="40" height="40">
+        <div class="training-text">
+          <p><strong>Node.js, Express, MongoDB & More</strong></p>
+          <p>Skills: JavaScript · Node.js · MongoDB · REST APIs</p>
+        </div>
+        <img src="images/udemy.png" alt="udemy logo" width="40" height="40">
+        <div class="training-text">
+          <p><strong>100 Days of Code: The Complete Python Pro Bootcamp</strong></p>
+          <p>Skills: Python (Programming Language)</p>
+        </div>
+        <img src="images/udemy.png" alt="udemy logo" width="40" height="40">
+        <div class="training-text">
+          <p><strong>The Complete Web Developer: Zero to Mastery</strong></p>
+          <p>Skills: Cascading Style Sheets (CSS) · HTML5 · React.js · JavaScript · REST APIs</p>
+        </div>
+        <img src="images/udemy.png" alt="udemy logo" width="40" height="40">
+        <div class="training-text">
+          <p><strong>The Complete JavaScript Course: From Hero to Zero</strong></p>
+          <p>Skills: Cascading Style Sheets (CSS) · HTML · JavaScript</p>
+        </div>
+        <img src="images/linkedin.png" alt="udemy logo" width="40" height="40">
+        <div class="training-text">
+          <p><strong>Vue.js: Creating and Hosting a Full-Stack Site</strong></p>
+          <p>Skills: JavaScript · Vue.js</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h3>
+        <ul class="skills--list">
+          <li>C/C++</li>
+          <li>React.js</li>
+          <li>C#</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>SQL</li>
+          <li>Python</li>
+          <li>.Net Core</li>
+        </ul>
+        <br>
+        <ul class="skills--list">
+          <li>Self-learning</li>
+          <li>Attention to detail</li>
+          <li>Adaptability</li>
+          <li>Teamwork</li>
+        </ul>
+    </section>
+  </article>
+</body>
+
+</html>
