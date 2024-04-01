@@ -69,11 +69,14 @@
       margin-left: 30px;
     }
 
-    .roles-list {
+    .cols2-list {
       display: grid;
       grid-template-columns: auto 1fr;
       column-gap: 20px;
-      row-gap: 20px;
+    }
+
+    .roles-list {
+        row-gap: 20px;
     }
 
     .role-header {
@@ -86,15 +89,11 @@
     }
 
     .university {
-      display: flex;
-      gap: 50px;
+      line-height: 1.2;
     }
 
     .courses-list {
-      display: grid;
-      grid-template-columns: auto 1fr;
-      column-gap: 20px;
-      row-gap: 10px;
+        row-gap: 10px;
     }
 
     .training-text {
@@ -113,8 +112,7 @@
             height="20">barryanderson60@outlook.com</span>
         <span class="links-row"><img src="images/phone.png" alt="phone logo" height="20">07484 311624</span>
         <span class="links-row"><img src="images/linkedin.png" alt="linkedin logo" height="20">
-          <a
-            href="https://www.linkedin.com/in/barry-fraser-anderson">https://www.linkedin.com/in/barry-fraser-anderson</a></span>
+          <a href="https://www.linkedin.com/in/barry-fraser-anderson">https://www.linkedin.com/in/barry-fraser-anderson</a></span>
         <span class="links-row"><img src="images/github.png" alt="github logo" height="20">
           <a href="https://github.com/barry-fraser-anderson">https://github.com/barry-fraser-anderson</a></span>
       </div>
@@ -123,12 +121,10 @@
     <section class="summary">
       <h2>Profile</h2>
       <p>
-        I am a competent software engineer with over 30 years of experience.
+        I am an experienced and adpatable software engineer.
       </p>
       <p>
-        I am very easy-going and work well in a team but am also happy working alone.
-        I successfully worked from home for 2 years during the Covid pandemic, and am working from home in my current
-        position.
+        I work well in a team but am also happy working alone.
       </p>
       <p>
         I have an eye for detail and a particular interest in code quality. I enjoy learning and using new skills.
@@ -140,7 +136,7 @@
 
     <section class="experience">
       <h2>Experience</h2>
-      <div class="roles-list">
+      <div class="roles-list cols2-list">
 
         <img class="role-image" src="images/cellhire.png" alt="Cellhire logo" width="40" height="40">
         <div class="role">
@@ -167,7 +163,7 @@
           </div>
           <div class="role-text">
             <p>
-              Development and maintenance of CRADLE, a cross-platform desktop-based Requirements Management
+              Development and maintenance of CRADLE, a cross-platform Requirements Management
               and Systems Engineering tool
             </p>
             <p>
@@ -203,52 +199,25 @@
           </div>
         </div>
 
-        <img class="role-image" src="images/endsleigh.png" alt="Endsleigh logo" width="40" height="40">
-        <div class="role">
-          <div class="role-header">
-            <p><strong>Application Programmer</strong></p>
-            <p>Endsleigh Insurance</p>
-            <p>Gloucester</p>
-            <p>1996 - 1997</p>
-          </div>
-          <div class="role-text">
-            <p>
-              Maintained and developed the Premium Calculation Engine using C. Database design
-            </p>
-          </div>
-        </div>
-
-        <img class="role-image" src="images/serco.png" alt="SerCo logo" width="40" height="40">
-        <div class="role">
-          <div class="role-header">
-            <p><strong>Senior Developer</strong></p>
-            <p>SerCo</p>
-            <p>DRA Malvern</p>
-            <p>1988 - 1966</p>
-          </div>
-          <div class="role-text">
-            <p>
-              Developed and maintained various utilities with C, C++, Perl on Unix platforms. Provided user support
-            </p>
-          </div>
-        </div>
-
       </div>
     </section> <!-- experience -->
 
     <section class="education">
       <h2>Education</h2>
-      <div class="university">
-        <strong>BSc (Hons) Physics with Computational Mathematics</strong>
-        <p>
-          Heriot-Watt University, Edinburgh
-        </p>
+      <div class="university cols2-list">
+        <img src="images/heriot_watt.jpg" alt="heriot-watt logo" width="40" height="40">
+        <div>
+          <p><strong>BSc (Hons) Physics with Computational Mathematics</strong></p>
+          <p>
+            Heriot-Watt University, Edinburgh
+          </p>
+        </div>
       </div>
     </section>
 
     <section class="add-training">
       <h2>Additional Training</h2>
-      <div class="courses-list">
+      <div class="courses-list cols2-list">
         <img src="images/udemy.png" alt="udemy logo" width="40" height="40">
         <div class="training-text">
           <p><strong>The Ultimate React Course 2024: React, Redux & More</strong></p>
