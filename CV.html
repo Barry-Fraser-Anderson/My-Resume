@@ -33,7 +33,7 @@
       .container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         background-color: lightgrey;
       }
 
@@ -54,15 +54,16 @@
       }
 
       .info-links {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        display: flex;
+        flex-wrap: wrap;
         margin-top: 20px;
       }
 
-      .links-row {
+      .links-cell {
         display: flex;
         column-gap: 10px;
         align-items: center;
+        flex-basis: 50%;
       }
 
       .skills--list {
@@ -124,21 +125,21 @@
           <h1 class="name">Barry Anderson</h1>
           <p class="address">Barrow-in-Furness, LA14, Cumbria, UK</p>
           <div class="info-links">
-            <span class="links-row"
+            <span class="links-cell"
               ><img
                 src="images/email20x20.png"
                 alt="email logo"
                 height="20"
               />barryanderson60@outlook.com</span
             >
-            <span class="links-row"
+            <span class="links-cell"
               ><img
                 src="images/phone20x20.png"
                 alt="phone logo"
                 height="20"
               />07484 311624</span
             >
-            <span class="links-row"
+            <span class="links-cell"
               ><img
                 src="images/linkedin20x20.png"
                 alt="linkedin logo"
@@ -148,7 +149,7 @@
                 >https://www.linkedin.com/in/barry-fraser-anderson</a
               ></span
             >
-            <span class="links-row"
+            <span class="links-cell"
               ><img
                 src="images/github20x20.png"
                 alt="github logo"
