@@ -59,10 +59,17 @@
         margin-top: 20px;
       }
 
+      @media (max-width: 850px) {
+        .info-links {
+          flex-direction: column;
+        }
+      }
+
       .links-cell {
         display: flex;
-        column-gap: 10px;
+        column-gap: 5px;
         align-items: center;
+        white-space: nowrap;
         flex-basis: 50%;
       }
 
@@ -87,7 +94,7 @@
       .cols2-list {
         display: grid;
         grid-template-columns: auto 1fr;
-        column-gap: 20px;
+        column-gap: 10px;
       }
 
       .roles-list {
@@ -101,7 +108,7 @@
       }
 
       .role-image {
-        vertical-align: top;
+        /* vertical-align: top; */
       }
 
       .university {
@@ -112,6 +119,9 @@
         row-gap: 10px;
       }
 
+      .training-image {
+        align-self: center;
+      }
       .training-text {
         line-height: 1.2;
       }
@@ -187,8 +197,8 @@
                 class="role-image"
                 src="images/cellhire40x40.png"
                 alt="Cellhire logo"
-                width="40"
-                height="40"
+                width="20"
+                height="20"
               />
               <div class="role-info">
                 <div class="role-header">
@@ -232,8 +242,9 @@
                 class="role-image"
                 src="images/3sl40x20.png"
                 alt="3SL logo"
-                width="40"
-                height="20"
+                width="20"
+                height="10"
+                style="margin-top: 5px"
               />
               <div class="role-info">
                 <div class="role-header">
@@ -244,8 +255,8 @@
                 </div>
                 <div class="role-text">
                   <p>
-                    Development and maintenance of CRADLE, a Requirements
-                    Management and Systems Engineering tool
+                    Developed and maintained CRADLE, a Requirements Management
+                    and Systems Engineering tool
                   </p>
                   <p>
                     As a member of the development team (4-8), I was involved
@@ -259,10 +270,10 @@
                     </li>
                     <li>
                       Developed core application code, tools, libraries, REST
-                      API, and Web UI
+                      API, and Web interface
                     </li>
                     <li>
-                      Created utility applications, to enhance product usability
+                      Created utility applications to enhance product usability
                     </li>
                     <li>
                       Performed code reviews, documentation, debugging and
@@ -273,24 +284,28 @@
                   <em>Key Achievements</em>
                   <ul class="achievements--list">
                     <li>
-                      Researched and implemented an ODBC interface to provide
-                      SQL support to a major customer
-                    </li>
-                    <li>
-                      Created a C/C# library, providing database access for
-                      customer applications
-                    </li>
-                    <li>
-                      Refactored and modernised the code-base, significantly
-                      enhancing maintainability, stability, and performance
-                    </li>
-                    <li>
-                      Ported essential libraries and utilities, enabling
-                      cross-platform support on Linux and Windows
+                      Proposed and spearheaded the modernisation the code-base,
+                      greatly improving maintainability and stability
                     </li>
                     <li>
                       Introduced use of version control and makefiles, reducing
                       build times by more than half
+                    </li>
+                    <li>
+                      Ported and enhanced core libraries and utilities, enabling
+                      cross-platform support on Linux and Windows
+                    </li>
+                    <li>
+                      Researched and implemented an ODBC interface to provide
+                      SQL support to a major customer
+                    </li>
+                    <li>
+                      Designed a C/C# library, providing database access for
+                      customer applications
+                    </li>
+                    <li>
+                      Continually refactored the product, improving code quality
+                      and performance
                     </li>
                   </ul>
                 </div>
@@ -308,8 +323,9 @@
             <img
               src="images/heriot_watt40x40.jpg"
               alt="heriot-watt logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
+              style="margin-top: 5px"
             />
             <div>
               <p>
@@ -326,20 +342,22 @@
           <h2>Additional Training</h2>
           <div class="courses-list cols2-list">
             <img
+              class="training-image"
               src="data:image/png;base64,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"
               alt="udemy logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p><strong>NextJS: The Complete Developer's Guide</strong></p>
               <p>Skills: Next.js - React.js · TypeScript . JavaScript</p>
             </div>
             <img
+              class="training-image"
               src="data:image/png;base64,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"
               alt="udemy logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p>
@@ -348,10 +366,11 @@
               <p>Skills: React.js · Redux.js · JavaScript</p>
             </div>
             <img
+              class="training-image"
               src="images/udemy40x40.png"
               alt="udemy logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p>
@@ -366,20 +385,22 @@
               </p>
             </div>
             <img
+              class="training-image"
               src="images/udemy40x40.png"
               alt="udemy logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p><strong>NextJs: The Complete Developer's Guide</strong></p>
               <p>Skills: Next.js · React.js · TypeScript · JavaScript</p>
             </div>
             <img
+              class="training-image"
               src="images/udemy40x40.png"
               alt="udemy logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p>
@@ -394,20 +415,22 @@
               </p>
             </div>
             <img
+              class="training-image"
               src="images/udemy40x40.png"
               alt="udemy logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p><strong>Node.js, Express, MongoDB & More</strong></p>
               <p>Skills: JavaScript · Node.js · MongoDB · REST APIs</p>
             </div>
             <img
+              class="training-image"
               src="images/udemy40x40.png"
               alt="udemy logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p>
@@ -418,10 +441,11 @@
               <p>Skills: Python (Programming Language)</p>
             </div>
             <img
+              class="training-image"
               src="images/udemy40x40.png"
               alt="udemy logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p>
@@ -433,10 +457,11 @@
               </p>
             </div>
             <img
+              class="training-image"
               src="images/udemy40x40.png"
               alt="udemy logo"
-              width="40"
-              height="40"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p>
@@ -447,10 +472,11 @@
               <p>Skills: Cascading Style Sheets (CSS) · HTML · JavaScript</p>
             </div>
             <img
+              class="training-image"
               src="images/linkedin40x40.png"
-              alt="udemy logo"
-              width="40"
-              height="40"
+              alt="linkedIn logo"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p>
@@ -459,30 +485,33 @@
               <p>Skills: JavaScript · Vue.js</p>
             </div>
             <img
+              class="training-image"
               src="images/linkedin40x40.png"
-              alt="udemy logo"
-              width="40"
-              height="40"
+              alt="linkedIn logo"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p><strong>Learning Docker</strong></p>
               <p>Skills: Docker</p>
             </div>
             <img
+              class="training-image"
               src="images/linkedin40x40.png"
-              alt="udemy logo"
-              width="40"
-              height="40"
+              alt="linkedIn logo"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p><strong>Getting started with Microsoft Azure</strong></p>
               <p>Skills: Microsoft Azure</p>
             </div>
             <img
+              class="training-image"
               src="images/linkedin40x40.png"
-              alt="udemy logo"
-              width="40"
-              height="40"
+              alt="linkedIn logo"
+              width="20"
+              height="20"
             />
             <div class="training-text">
               <p><strong>AWS Essential Training for Developers</strong></p>
