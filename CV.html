@@ -74,7 +74,10 @@
       }
 
       .skills--list {
-        columns: 4;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        row-gap: 5px;
+        /* white-space: nowrap; */
         list-style: none;
         background-color: lightgray;
         padding-left: 5px;
@@ -175,18 +178,13 @@
         <section class="summary">
           <h2>Profile</h2>
           <p>
-            I am an experienced, reliable and adaptable software engineer with a
-            wide range of skills
+            An experienced, reliable and adaptable software engineer with a wide
+            range of skills. Works well in a team but has also successfully
+            worked from home for 3 years. Possesses excellent problem-solving
+            skills, an eye for detail and a keen interest in code quality. Happy
+            to learn new technologies to get the job done. Has previously held a
+            UK security clearance
           </p>
-          <p>
-            I work well in a team and have successfully worked from home for 3
-            years
-          </p>
-          <p>
-            I have an eye for detail and a keen interest in code quality, and
-            enjoy learning and using new technologies
-          </p>
-          <p>I have previously held a UK security clearance</p>
         </section>
 
         <section class="experience">
@@ -259,7 +257,7 @@
                     and Systems Engineering tool
                   </p>
                   <p>
-                    As a member of the development team (4-8), I was involved
+                    As a member of the development team (4-8), was involved
                     throughout the entire SDLC
                   </p>
                   <ul class="job-tasks--list">
@@ -313,7 +311,24 @@
             </article>
           </div>
         </section>
-        <!-- experience -->
+
+        <section class="skills">
+          <h2>Skills</h2>
+          <ul class="skills--list">
+            <li>C, C#, .NET</li>
+            <li>JavaScript</li>
+            <li>HTML, CSS</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <!-- </ul>
+          <ul class="skills--list"> -->
+            <li>Reliability</li>
+            <li>Adaptability</li>
+            <li>Teamwork</li>
+            <li>Attention to detail</li>
+            <li>Problem-solving</li>
+          </ul>
+        </section>
       </div>
 
       <div class="page">
@@ -411,7 +426,7 @@
               </p>
               <p>
                 Skills: React.js · TypeScript · JavaScript · REST APIs · C# ·
-                .NET Core · ASP.NET Core
+                ASP.NET Core · EF Core
               </p>
             </div>
             <img
@@ -518,27 +533,6 @@
               <p>Amazon Web Services</p>
             </div>
           </div>
-        </section>
-
-        <section class="skills">
-          <h2>Skills</h2>
-          <ul class="skills--list">
-            <li>C/C++</li>
-            <li>React.js</li>
-            <li>C#</li>
-            <li>HTML/CSS</li>
-            <li>JavaScript + Node.js</li>
-            <li>SQL</li>
-            <li>Python</li>
-            <li>.NET Core</li>
-          </ul>
-          <br />
-          <ul class="skills--list">
-            <li>Reliability</li>
-            <li>Adaptability</li>
-            <li>Teamwork</li>
-            <li>Attention to detail</li>
-          </ul>
         </section>
       </div>
     </div>
