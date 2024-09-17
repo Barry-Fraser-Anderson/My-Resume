@@ -2,4 +2,4 @@
 
 An HTML version of my CV
 
-![image](https://github.com/user-attachments/assets/72f14603-6cdd-407d-9753-bc08e533f6bd)
+![HTML CV](https://github.com/user-attachments/assets/833bec17-d562-4850-be29-a7065d5938d9)
